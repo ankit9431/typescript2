@@ -5,6 +5,7 @@ import { catchAsyncError } from "./catchAsyncHandler.js";
 
 export const protect = catchAsyncError(async (req, res, next) => {
   let token;
+  //test
   if(
     req.headers.authorization &&
     req.headers.authorization.startsWith("Bearer")
